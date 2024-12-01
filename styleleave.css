@@ -1,0 +1,451 @@
+/* CSS Reset Start */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+a {
+    text-decoration: none;
+}
+
+/* CSS Reset End */
+
+/* CSS Variables Start */
+:root {
+    --header-bg-color: #1c1cf0;
+    --body-bg-color: #fff;
+    --color-white: #fff;
+    --color-black: #000;
+    --nav-bg-color: #fff;
+    --nav-a-hover-color: #ddd;
+    --yellow-color: #1c1cf0;
+    --lime-color: #fff;
+    /*#ADFF2F*/
+    --red-color: rgb(255, 0, 0);
+    --blue-color: rgb(0, 0, 255);
+    --chartreuse-color: rgb(128, 255, 0);
+    --aqua-color: #00FFFF;
+    --purple-color: #9B59B6;
+    --green-color: #7fff00;
+    --personal-level-color: #FF00FF;
+    --pure-yellow-color: rgb(255, 255, 0);
+    --footer-color: #1c1cf0;
+    --bg-dark: #0c0c0c;
+}
+
+/* CSS Variable End */
+
+/* CSS Utility Classes Start */
+.container {
+    max-width: 1300px;
+    margin: auto;
+    padding: 0 5px;
+}
+
+.container1 {
+    max-width: 1300px;
+    margin: auto;
+    padding: 0 5px;
+}
+
+.leave_container {
+    max-width: 1300 px;
+    margin: auto;
+    padding: 0 5px;
+}
+
+.d-flex {
+    display: flex;
+}
+
+.align-items-center {
+    align-items: center;
+}
+
+.justify-space-between {
+    justify-content: space-between;
+}
+
+.text-center {
+    text-align: center;
+}
+
+.w-100 {
+    width: 100%;
+}
+
+.gap-20 {
+    gap: 20px;
+}
+
+.mt-4 {
+    margin-top: 40px;
+}
+
+.page-section {
+    padding: 40px 0;
+}
+
+.ml-auto {
+    margin-left: auto;
+}
+
+.mr-auto {
+    margin-right: auto;
+}
+
+.p-0 {
+    padding-top: 0;
+}
+
+/* CSS Utility Classes End */
+
+/* CSS for Body Start */
+body {
+    font-family: Arial, sans-serif;
+    background-color: var(--body-bg-color);
+    height: 100vh;
+}
+
+/* CSS For Body End */
+
+/* CSS for Header Start */
+header {
+    float: middle;
+    background-color: var(--header-bg-color);
+    color: var(--color-white);
+    padding: 14px;
+    text-align: center;
+
+}
+
+header h1 {
+    /* position: absolute;
+    left: 445px;
+    top: 10px; */
+
+    font-size: 40px;
+    line-height: 1.7;
+    letter-spacing: 2;
+    /*Font size*/
+    font-weight: 880;
+}
+
+header h2 {
+    position: absolute;
+    left: 430px;
+    top: 10px;
+    font-size: 38px;
+    line-height: 1.8;
+    letter-spacing: 2;
+    /*Font size*/
+    font-weight: 880;
+}
+
+/* CSS for Header End */
+
+/* CSS for Navbar Start */
+nav {
+    background-color: var(--nav-bg-color);
+    overflow: hidden;
+    padding: 20px 0;
+}
+
+nav a {
+    /*background-color: var(--header-bg-color)*/
+    color: var(--color-white);
+    text-align: center;
+    padding: 14px;
+    transition: 0.5s ease-in-out;
+}
+
+nav a:hover {
+    background-color: var(--nav-a-hover-color);
+    color: var(--color-black);
+}
+
+/* Updated code for Navmenus */
+.report-btn{
+    display: flex;
+}
+
+.report-btn ul li{
+    list-style-type: none;
+    display: inline-block;
+    margin-bottom: 30px;
+}
+
+.toggle-btn {
+    margin-top: 20px;
+    padding: 10px 20px;
+    cursor: pointer;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    color: #ffffff;
+    background-color: #007bff;
+    transition: background-color 0.3s;
+}
+
+/* Dark mode styles */
+/* Dark mode styles */
+.dark-mode nav {
+    background-color: var(--bg-dark);
+    color: #ffffff;
+}
+
+.dark-mode body {
+    background-color: var(--bg-dark);
+    color: #ffffff;
+}
+
+.dark-mode main {
+    background-color: var(--bg-dark);
+    color: #ffffff;
+}
+
+.dark-mode header {
+    background-color: var(--bg-dark);
+    color: #ffffff;
+}
+
+.dark-mode footer {
+    background-color: var(--bg-dark);
+    color: #ffffff;
+}
+
+/* .dark-mode table {
+    background-color: var(--bg-dark);
+    color: #ffffff;
+} */
+
+.dark-mode td {
+    background-color: var(--bg-dark);
+    color: #ffffff;
+}
+
+body.dark-mode .toggle-btn {
+    background-color: #606c76;
+}
+
+/* CSS for Navbar End */
+
+/* main {
+    padding: 20px;
+} */
+
+
+/* CSS For Table Start */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    color: var(--color-black);
+    margin: 10PX;
+}
+
+body {
+    font-family: Arial, sans-serif;
+}
+
+.leave_container {
+    overflow-x: auto;
+    /* Enables horizontal scrolling */
+    overflow-y: auto;
+    width: 100%;
+    margin-top: 2px;
+    /* Space above the table */
+}
+
+.fixed-column {
+    position: sticky;
+    /* Makes the first column sticky */
+    left: 0;
+    background-color: #fff;
+    /* Background color for the sticky column */
+    z-index: 10;
+    /* Ensures it stays above the other columns */
+}
+
+.fixed-row {
+    position: sticky;
+    /* Makes the first row sticky */
+    left: 0;
+    background-color: #fff;
+    /* Background color for the sticky row */
+    z-index: 10;
+    /* Ensures it stays above the other columns */
+}
+
+table {
+    border-collapse: collapse;
+    width: 100%;
+}
+
+th,
+td {
+    position: sticky;
+    top: 0;
+    text-align: left;
+    border: 1px solid #fff;
+    padding: 10px;
+    text-align: center;
+    z-index: 0;
+}
+
+thead th {
+    background-color: var(--yellow-color);
+    z-index: 10;
+}
+
+.flex-item-left {
+    overflow-y: auto;
+    /* Enables vertical scrolling */
+    max-height: 400px;
+    /* Set max height for scrolling */
+}
+
+tr,
+th,
+td {
+    border: .3px solid var(--color-black);
+    text-align: left;
+    margin: 20px auto;
+    padding: 6px 10px;
+    /* CSS Shorthand Property {Clockwise Order}*/
+    /* padding-top: 6px;
+        padding-bottom: 6px;
+        padding-left: 13px;
+        padding-right: 10px; */
+}
+
+/* CSS for Table End */
+
+/* CSS for Color Start */
+.yellow {
+    background-color: var(--yellow-color);
+    color: var(--color-white);
+}
+
+.lime {
+    background-color: var(--lime-color);
+}
+
+.red {
+    background-color: var(--red-color);
+    color: var(--color-white);
+}
+
+.white {
+    background-color: var(--color-white);
+}
+
+.blue {
+    background-color: var(--blue-color);
+}
+
+.Chartreuse {
+    background-color: var(--chartreuse-color);
+}
+
+.aqua {
+    background-color: var(--aqua-color);
+}
+
+.purple {
+    background-color: var(--purple-color);
+    color: var(--color-white);
+}
+
+.green {
+    background-color: var(--green-color);
+    color: var(--color-black);
+}
+
+.personal_leave {
+    background-color: var(--personal-level-color);
+    color: var(--color-white);
+}
+
+.black {
+    background-color: var(--yellow-color);
+    color: var(--color-white);
+}
+
+.foot {
+    color: black;
+    /* Initial color */
+    text-decoration: none;
+    /* Removes underline */
+    font-weight: bold;
+    /* Makes text bold */
+    animation: blink 1s infinite;
+    /* Apply the animation */
+}
+
+@keyframes blink {
+
+    0%,
+    100% {
+        color: white;
+        /* Start and end color */
+    }
+
+    50% {
+        color: #1c1cf0;
+        /* Color in the middle of the animation */
+    }
+}
+
+.foot:hover {
+    text-decoration: Underline;
+    /* Underline on hover for better UX */
+}
+
+.yellow1 {
+    background-color: var(--pure-yellow-color);
+}
+
+.powderblue {
+    background-color: #B6D0E2;
+}
+
+/* CSS for Color End */
+
+/* Footer Start */
+footer {
+    background-color: var(--footer-color);
+    color: var(--color-white);
+    text-align: center;
+    padding: 10px 0;
+    position: flex;
+    width: 100%;
+    bottom: 0;
+}
+
+/* Footer End */
+
+/* .container {
+    display: flex;
+} */
+
+/* .flex-item-right,
+.flex-item-left {
+    flex: 100%;
+} */
+
+
+/* Media query (For Responsive Design) */
+@media only screen and (max-width: 768px) {
+    main {
+        overflow: scroll;
+    }
+
+    .toggle-btn {
+        font-size: 14px;
+    }
+
+    .f-column {
+        flex-direction: column;
+    }
+}
